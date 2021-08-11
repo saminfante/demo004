@@ -1,0 +1,8 @@
+drop table IF EXISTS urls;
+
+create TABLE urls (
+    id INTEGER PRIMARY KEY AUTOINCREMENT,
+    created TIMESTAMP NOT NULL DEFAULT CURRENT_TIMESTAMP,
+    original_url TEXT NOT NULL,
+    clicks INTEGER NOT NULL DEFAULT 0
+);
